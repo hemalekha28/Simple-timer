@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timer</title>
+  <style>
+    #timer {
+      
+      font-family: monospace;
+      color: #2b2b2b;
+    }
+    body {
+      padding: 250px 0px;
+      text-align: center;
+      background: linear-gradient(to right, #31155e, #000000);
+
+    }
+    #timer{
+        color:white;    
+    }
+    button{
+        padding:10px 20px;
+        margin-left:10px;
+        font-size: 20px;
+        border:none;
+        border-radius: 7px;
+        background-color: #2f0a42;
+        color: white;
+        cursor: pointer; 
+
+    }
+    #laps{
+      list-style: none;
+      padding: 10px;
+      margin-top: 20px;
+      color: white;
+      font-family: monospace;
+      font-size: 20px;
+
+    }
+  </style>
+</head>
+<body>
+
+  <div id="timer" style="font-size: 48px;">00:00:00</div><br />
+  <button onclick="startInterval()" id="btn">Start Timer</button>
+  <button onclick="stopInterval()" id="btn2">Stop Timer</button>
+  <button onclick="resetTimer()" id="bt3">Reset Timer</button>
+  <button onclick="lap()" id="btn4">Lap</button>
+  <ul id="laps"></ul>
+  <script src="script.js">
+  </script>
+
+</body>
+</html>
